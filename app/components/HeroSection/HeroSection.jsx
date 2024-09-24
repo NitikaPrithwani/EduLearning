@@ -1,4 +1,4 @@
-export default function HeroSection({image, page}) {
+export default function HeroSection({page}) {
     return (
         <>
             <div className="lg:h-[260px] h-[127px] relative" style={{
