@@ -1,0 +1,8 @@
+.background_gradient{
+    background-image: url('/HomePageImages/plain-background.png');
+    background-size: cover;
+}
+
+.color{
+    color: #5b90dd;
+}

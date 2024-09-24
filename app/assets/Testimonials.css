@@ -1,0 +1,19 @@
+.bgImage {
+  background-image: url("/HomePageImages/testimonial-bg.png");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+@media (min-width: 768px) {
+  .marginLeft{
+    /* margin-top: 175px; */
+    position: relative;
+    top: 80px;
+    margin-left: 100px;
+  }
+  .marginLeftHeading{
+    position: relative;
+    top: 50px;
+    margin-left: 650px;
+  }
+}

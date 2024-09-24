@@ -1,0 +1,13 @@
+@media (min-width: 768px) {
+  .backgroundGradient {
+    background-image: url("/HomePageImages/plain-background.png");
+    background-size: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .backgroundGradient {
+    background-image: url("/HomePageImages/plain-background.png");
+    background-size: contain;
+  }
+}

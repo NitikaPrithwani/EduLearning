@@ -1,0 +1,13 @@
+.bgImage{
+    background-image: url("/teacher/BecomeATeacherHeroSection.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+  .bgBtn{
+    background-image: url("/HomePageImages/plain-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    padding:  15px 35px;
+  }

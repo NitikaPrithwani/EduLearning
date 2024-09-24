@@ -1,0 +1,19 @@
+.bgImage2 {
+    background-image: url("/news/newsHeroSection.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+}
+.textTruncate{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.textTruncateNewsDetail{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  text-overflow: ellipsis;
+}
