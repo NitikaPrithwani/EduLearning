@@ -13,6 +13,7 @@ export default function MeetTheTeachers() {
                     if (index < 3) {
                         return (
                             <TeachersCard
+                                key={teacher.id}
                                 teachers={teacher}
                             />
                         );
