@@ -5,12 +5,12 @@ export default function Course() {
         <>
             {
                 FooterCourse.map((course, index) => (
-                    <div className="flex mb-5">
+                    <div key={index} className="flex mb-5">
                         <div>
                             <div className="w-1 h-7 me-3 rounded-lg bg-white"></div>
                             {
                                 course.courses.map((courseName, index) => (
-                                    <div className="bg-white w-2 h-2 mt-6 rounded-full"></div>
+                                    <div key={index} className="bg-white w-2 h-2 mt-6 rounded-full"></div>
                                 ))
                             }
                         </div>

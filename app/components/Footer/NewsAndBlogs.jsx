@@ -6,12 +6,12 @@ export default function NewsAndBlogs() {
         <>
             {
                 FooterNewsAndBlogs.map((data, index) => (
-                    <div className="flex mb-5">
+                    <div key={index} className="flex mb-5">
                         <div>
                             <div className="w-1 h-7 me-3 rounded-lg bg-white"></div>
                             {
                                 data.news.map((newsData, index) => (
-                                    <div className="bg-white w-2 h-2 mt-12 rounded-full"></div>
+                                    <div key={index} className="bg-white w-2 h-2 mt-12 rounded-full"></div>
                                 ))
                             }
                         </div>
@@ -22,7 +22,7 @@ export default function NewsAndBlogs() {
                             <ul>
                                 {
                                     data.news.map((newsData, index) => (
-                                        <li className="mb-2">
+                                        <li key={index} className="mb-2">
                                             <a href="#" className="hover:underline font-bold tracking-[0.15em]">
                                                 {newsData.heading} <br /> Branding Info.
                                             </a>

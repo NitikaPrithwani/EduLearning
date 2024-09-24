@@ -1,3 +1,4 @@
+import Image from "next/image"
 export default function Instructors() {
     return (
         <>
@@ -5,10 +6,12 @@ export default function Instructors() {
                 <h2 className="text-2xl font-bold">Instructors</h2>
                 <div className="mt-4 text-gray-700">
                     <div className="flex items-start mb-6">
-                        <img
+                        <Image
                             src="/teacher/2.jpg"
                             alt="Christine Eve"
                             className="w-20 h-20 rounded-full mr-4"
+                            width={80}
+                            height={80}
                         />
                         <div>
                             <h3 className="text-lg font-semibold">Christine Eve</h3>
@@ -23,10 +26,12 @@ export default function Instructors() {
                         </div>
                     </div>
                     <div className="flex items-start mb-6">
-                        <img
+                        <Image
                             src="/teacher/1.jpg"
                             alt="David Cooper"
                             className="w-20 h-20 rounded-full mr-4"
+                            width={80}  
+                            height={80} 
                         />
                         <div>
                             <h3 className="text-lg font-semibold">David Cooper</h3>

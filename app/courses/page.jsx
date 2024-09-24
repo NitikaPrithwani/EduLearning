@@ -8,7 +8,7 @@ import Footer from "../components/Footer/page";
 import Header from "../components/Header/page";
 import HeroSection from "./HeroSection";
 
-export default function courses() {
+export default function Courses() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const categories = [
