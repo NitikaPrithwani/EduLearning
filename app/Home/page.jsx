@@ -8,7 +8,7 @@ import OurServices from "../modules/Home/OurServices/Page";
 import OurTeachers from "../modules/Home/OurTeachers/Page";
 import StrengthOverview from "../modules/Home/StrengthOverviewSection/Page";
 import Testimonials from "../modules/Home/Testimonials/Page";
-import TopFeaturedCourses from "../modules/Home/TopFeaturedCourses/Page";
+import TopFeaturedCourses from "../modules/Home/TopFeaturedCourses/page";
 import WhyUsSection from "../modules/Home/WhyUsSection/Page";
 
 export default function HomePage() {

@@ -1,4 +1,4 @@
-import HeroSection from "@/app/Components/HeroSection/HeroSection";
+import HeroSection from "@/app/components/HeroSection/page";
 import CommentsSection from "./CommentsSection";
 import NewsDetailContent from "./NewsDetailContent";
 import RelatedPosts from "./RelatedPosts";
