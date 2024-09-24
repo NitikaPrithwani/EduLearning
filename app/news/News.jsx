@@ -7,8 +7,8 @@ export default function News() {
         <>
             <section className="md:container md:mx-auto py-12 bg-white lg:w-4/5 lg:mx-auto">
                 <div className="flex justify-center grid grid-cols-1 lg:grid-cols-3">
-                    {NewsData.map((news) => (
-                        <NewsCard news={news} id={news.id} />
+                    {NewsData.map((news, index) => (
+                        <NewsCard key={index} news={news} id={news.id} />
                     ))}
                 </div>
             </section>

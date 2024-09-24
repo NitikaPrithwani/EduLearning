@@ -9,7 +9,7 @@ export default function RelatedPosts() {
                     {NewsData.map((news, index) => {
                         if (index == 6 || index == 7 || index == 8) {
                             return (
-                                <NewsCard news={news} id={news.id} />
+                                <NewsCard key={index} news={news} id={news.id} />
                             )
                         }
                     })}
