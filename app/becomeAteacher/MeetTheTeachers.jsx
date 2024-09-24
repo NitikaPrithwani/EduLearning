@@ -20,7 +20,7 @@ export default function MeetTheTeachers() {
                     }
                     else if(index == 4){
                         return(
-                            <Link href="/teachers"><MdNavigateNext className="text-5xl lg:mt-44 mx-auto my-5 transform transition duration-500 hover:scale-105"/></Link>
+                            <Link key={index} href="/teachers"><MdNavigateNext className="text-5xl lg:mt-44 mx-auto my-5 transform transition duration-500 hover:scale-105"/></Link>
                         )
                     }
                 })}
