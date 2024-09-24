@@ -1,4 +1,4 @@
-import CourseCard from "@/app/Modules/Home/TopFeaturedCourses/CourseCard";
+import CourseCard from "../../Home/TopFeaturedCourses/CourseCard";
 import { CourseData } from "@/static-data/CourseData";
 
 export default function RelatedCourses({ courseDetail }) {
