@@ -1,5 +1,5 @@
 import ApplyForTeacher from "./ApplyForTeacher";
-import HeroSection from "@/app/Components/HeroSection/HeroSection";
+import HeroSection from "../components/HeroSection/page";
 import MeetTheTeachers from "./MeetTheTeachers";
 
 export default function Content() {

@@ -3,7 +3,7 @@ import Map from "./Map";
 import QueryForm from "./QueryForm";
 import Header from "@/app/components/Header/page";
 import Footer from "../components/Footer/page";
-import HeroSection from "@/app/Components/HeroSection/HeroSection";
+import HeroSection from "../components/HeroSection/page";
 
 export default function contact() {
     return (
