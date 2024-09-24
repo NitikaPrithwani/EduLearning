@@ -1,6 +1,6 @@
 import Footer from "../components/Footer/page"
 import Header from "../components/Header/page"
-import HeroSection from "../components/HeroSection/HeroSection"
+import HeroSection from "../components/HeroSection/page"
 import News from "./News"
 
 export default function AllNews() {

@@ -1,8 +1,8 @@
-export default function HeroSection({page}) {
+export default function HeroSection({image,page}) {
     return (
         <>
             <div className="lg:h-[260px] h-[127px] relative" style={{
-                // backgroundImage: `url(${image})`,
+                backgroundImage: `url(${image})`,
                 backgroundSize: 'cover'
             }}>
                 <p className=" text-white text-3xl lg:text-5xl font-bold tracking-wider lg:w-4/5 lg:mx-10 float-start ps-7 pt-8 lg:ps-28 lg:pt-20">{page}</p>
