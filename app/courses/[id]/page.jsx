@@ -1,8 +1,8 @@
 import { CourseData } from "@/static-data/CourseData";
 import Heading from "../Heading";
-import Header from "@/app/Components/Header/Header";
+import Header from "@/app/components/Header/page";
 import HeroSection from "../HeroSection";
-import Footer from "@/app/Components/Footer/Footer";
+import Footer from "@/app/components/Footer/page";
 import SocialMediaHandles from "@/app/modules/Courses/CourseDetail/SocialMediaHandles";
 import CourseDetail from "@/app/modules/Courses/CourseDetail/CourseDetail";
 import CourseAside from "@/app/modules/Courses/CourseDetail/CourseAsideSection";

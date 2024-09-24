@@ -1,8 +1,8 @@
 import ContactDetails from "./ContactDetails";
 import Map from "./Map";
 import QueryForm from "./QueryForm";
-import Header from "@/app/Components/Header/Header";
-import Footer from "@/app/Components/Footer/Footer";
+import Header from "@/app/components/Header/page";
+import Footer from "../components/Footer/page";
 import HeroSection from "@/app/Components/HeroSection/HeroSection";
 
 export default function contact() {

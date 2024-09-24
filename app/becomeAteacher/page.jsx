@@ -1,5 +1,5 @@
-import Footer from "../Components/Footer/Footer";
-import Header from "../Components/Header/Header";
+import Footer from "../components/Footer/page";
+import Header from "../components/Header/page";
 import Content from "./Content";
 
 export default function becomeAteacher() {

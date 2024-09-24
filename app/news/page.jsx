@@ -1,5 +1,5 @@
-import Footer from "../components/Footer/Footer"
-import Header from "../components/Header/Header"
+import Footer from "../components/Footer/page"
+import Header from "../components/Header/page"
 import HeroSection from "../components/HeroSection/HeroSection"
 import News from "./News"
 

@@ -4,8 +4,8 @@ import { useState } from "react";
 import CourseCard from "../modules/Home/TopFeaturedCourses/CourseCard";
 import { CourseData } from "../../static-data/CourseData";
 import "../assets/Course.css";
-import Footer from "../components/Footer/Footer";
-import Header from "../components/Header/Header";
+import Footer from "../components/Footer/page";
+import Header from "../components/Header/page";
 import HeroSection from "./HeroSection";
 
 export default function courses() {

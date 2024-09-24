@@ -1,5 +1,5 @@
-import Footer from "@/app/Components/Footer/Footer";
-import Header from "@/app/Components/Header/Header";
+import Footer from "@/app/components/Footer/page";
+import Header from "@/app/components/Header/page";
 import Detail from "@/app/modules/News/NewsDetail/Detail";
 import { NewsData } from "@/static-data/NewsData";
 
