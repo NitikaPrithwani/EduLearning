@@ -1,5 +1,6 @@
 "use client";
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function ApplyForTeacher() {
     const [formValues, setFormValues] = useState({
@@ -14,7 +15,7 @@ export default function ApplyForTeacher() {
 
     const validateForm = () => {
         const newErrors = {};
-        const phonePattern = /^[0-9]{10}$/; 
+        const phonePattern = /^[0-9]{10}$/;
 
         if (!formValues.phone) {
             newErrors.phone = 'Phone number is required.';
@@ -55,7 +56,13 @@ export default function ApplyForTeacher() {
             <div className="md:container md:flex md:lg:w-4/5 md:mx-auto md:gap-16 mt-12 grid grid-cols-1">
                 <div className="lg:w-7/12">
                     <h1 className="font-bold text-3xl m-3 tracking-wider">Teaching Benefits</h1>
-                    <img src="/teacher/meeting-1245776_1920.jpg" alt="Teaching Benefits" className="h-64 w-full rounded-2xl" />
+                    <Image
+                        src="/teacher/meeting-1245776_1920.jpg"
+                        alt="Teaching Benefits"
+                        className="h-64 w-full rounded-2xl"
+                        width={500} 
+                        height={400}
+                    />
                     <p className="leading-6 mt-5 text-center md:text-start">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eius harum molestiae. Consect magnam minima, sapiente impedit eius dolor unde odit saepe quas neque itaque vitae recusa libero assumenda aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quia incidunt error dignissimos ex aliquam! Distinctio accusamus magnam, quidem numquam perspiciatis sapiente sit eveniet deserunt, doloremque soluta fuga itaque quasi.
                     </p>

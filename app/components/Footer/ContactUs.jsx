@@ -1,22 +1,27 @@
 import { FooterContactDetails } from "@/static-data/FooterContactDetails";
+import Image from "next/image";
 
 export default function ContactUs() {
     return (
         <>
             {
                 FooterContactDetails.map((contact, index) => (
-                    <div className="flex mb-5">
+                    <div key={index} className="flex mb-5">
                         <div>
                             <div className="w-1 h-7 me-0 mt-1 rounded-lg bg-white"></div>
-                            <img
+                            <Image
                                 src={contact.locatonIcon}
                                 alt=""
                                 className="w-4 h-4 mt-7 me-3"
+                                width={16}
+                                height={16}
                             />
-                            <img
+                            <Image
                                 src={contact.mailIcon}
                                 alt=""
                                 className="w-4 h-4 mt-9 me-3"
+                                width={16} 
+                                height={16}
                             />
                         </div>
                         <div>
