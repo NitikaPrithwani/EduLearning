@@ -5,9 +5,12 @@ import CourseCard from "./CourseCard";
 import { coursesData } from "@/static-data/CoursesData";
 import Heading from "./Heading";
 import styles from "../../../assets/CourseCard.module.css";
+import Backdrop from '@mui/material/Backdrop';
+import CircularProgress from '@mui/material/CircularProgress';
 
 export default function TopFeaturedCourses() {
   const [selectedCategory, setSelectedCategory] = useState("Graphics & Design");
+  const [loading, setLoading] = useState(false);
 
   const categories = [
     "Graphics & Design",
@@ -20,6 +23,15 @@ export default function TopFeaturedCourses() {
     (course) => course.category === selectedCategory
   );
 
+  const handleCategoryChange = (category) => {
+    setLoading(true);
+    setSelectedCategory(category);
+    
+    setTimeout(() => {
+      setLoading(false);
+    }, 500); 
+  };
+
   return (
     <>
       <Heading />
@@ -30,7 +42,7 @@ export default function TopFeaturedCourses() {
             className={`${styles.categoryTab} ${
               selectedCategory === category ? styles.selectedCategory : ""
             }`}
-            onClick={() => setSelectedCategory(category)}
+            onClick={() => handleCategoryChange(category)}
           >
             {category}
           </button>
@@ -41,6 +53,12 @@ export default function TopFeaturedCourses() {
           <CourseCard key={index} course={course} id={course.id} />
         ))}
       </div>
+      <Backdrop
+        sx={(theme) => ({ color: '#fff', zIndex: theme.zIndex.drawer + 1 })}
+        open={loading}
+      >
+        <CircularProgress color="inherit" />
+      </Backdrop>
     </>
   );
 }

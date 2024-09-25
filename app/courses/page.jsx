@@ -7,9 +7,12 @@ import "../assets/Course.css";
 import Footer from "../components/Footer/page";
 import Header from "../components/Header/page";
 import HeroSection from "./HeroSection";
+import Backdrop from '@mui/material/Backdrop';
+import CircularProgress from '@mui/material/CircularProgress';
 
 export default function Courses() {
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [loading, setLoading] = useState(false);
 
   const categories = [
     "All",
@@ -24,6 +27,15 @@ export default function Courses() {
       ? CourseData
       : CourseData.filter((course) => course.category === selectedCategory);
 
+  const handleCategoryChange = (category) => {
+    setLoading(true);
+    setSelectedCategory(category);
+    
+    setTimeout(() => {
+      setLoading(false);
+    }, 500); 
+  };
+
   return (
     <>
       <Header />
@@ -32,9 +44,8 @@ export default function Courses() {
         {categories.map((category, index) => (
           <button
             key={index}
-            className={`${"categoryTab"} ${selectedCategory === category ? "selectedCategory" : ""
-              }`}
-            onClick={() => setSelectedCategory(category)}
+            className={`${"categoryTab"} ${selectedCategory === category ? "selectedCategory" : ""}`}
+            onClick={() => handleCategoryChange(category)}
           >
             {category}
           </button>
@@ -50,6 +61,13 @@ export default function Courses() {
         ))}
       </div>
       <Footer />
+      
+      <Backdrop
+        sx={(theme) => ({ color: '#fff', zIndex: theme.zIndex.drawer + 1 })}
+        open={loading}
+      >
+        <CircularProgress color="inherit" />
+      </Backdrop>
     </>
   );
 }
