@@ -30,7 +30,7 @@ export default function Form() {
         <>
             <div className="md:container md:mx-auto mt-8 pb-8 pt-8 flex bg-white md:w-4/5 w-4/5 mx-auto rounded-2xl flex-col md:flex-row items-center">
                 <form onSubmit={handleSubmit} className="w-full flex flex-col md:flex-row items-center">
-                    <div className="flex items-center w-full md:w-auto mb-4 md:mb-0 grid grid-cols-1 md:grid-cols-3 ">
+                    <div className="flex items-center w-full md:w-auto mb-4 md:mb-0 ">
                         <NameInput name={name} setName={setName} />
                         <MailInput email={email} setEmail={setEmail} />
                     </div>

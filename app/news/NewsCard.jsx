@@ -14,7 +14,6 @@ export default function NewsCard({news, id}) {
         dispatch(increment(id))
     }
     
-
     return (
         <>
             <div
