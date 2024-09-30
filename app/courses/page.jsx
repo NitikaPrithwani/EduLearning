@@ -118,7 +118,7 @@ export default function Courses() {
     <>
       <Header />
       <HeroSection />
-      <div className="md:container md:mx-auto md:w-4/5 categoryTabs">
+      <div className="md:container md:mx-auto md:w-4/5 categoryTabs md:flex md:justify-between">
         <div className="md:w-2/5 me-8 mb-5 md:mb-0 md:me-0">
           <Autocomplete
             multiple
